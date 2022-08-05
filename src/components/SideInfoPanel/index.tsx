@@ -23,7 +23,7 @@ const SideInfoPanel: React.FC<SideInfoPanelProps> = ({
         <HeaderTitle>{title}</HeaderTitle>
         <Input
           onChange={e => onSearch(e.target.value)}
-          width="180px"
+          width="100px"
           height="45px"
           placeholder="Pesquisar..."
         />

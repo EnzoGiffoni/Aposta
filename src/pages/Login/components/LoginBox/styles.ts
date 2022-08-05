@@ -2,17 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.form`
   width: 500px;
-  height: 429px;
   background-color: #fff;
   z-index: 99;
   position: absolute;
-  border-radius: 13px;
   box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
 
   display: flex;
 
   flex-direction: column;
   padding: 28px 37px 28px 45px;
+
+  .Inputs{
+    margin-top: 2rem;
+  }
 `;
 
 export const MainTitle = styled.h1`
@@ -31,7 +33,12 @@ export const SecondaryText = styled.h2`
 export const ButtonsWrapper = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  margin-top: 28px;
+`;
+
+export const ButtonsWrapper2 = styled.div`
+  width: 100%;
+  margin-left: 6rem;
   margin-top: 28px;
 `;
 

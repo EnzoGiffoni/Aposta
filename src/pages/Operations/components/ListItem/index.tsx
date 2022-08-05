@@ -2,6 +2,8 @@ import React from 'react';
 
 import trainingIcon from '../../../../assets/icons/trainning-icon-2.svg';
 
+import { AiOutlineFileText } from "react-icons/ai";
+
 import {
   Container,
   Item,
@@ -46,7 +48,7 @@ const ListItem: React.FC<ListItemProps> = ({ list, onClicked }) => {
           >
             <LogoWrapper>
               <RoundedOutline>
-                <img src={trainingIcon} />
+              <AiOutlineFileText/>
               </RoundedOutline>
             </LogoWrapper>
 

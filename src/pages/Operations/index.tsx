@@ -81,7 +81,7 @@ const Operations: React.FC = () => {
       </SideInfoPanel>
 
       <Form
-        title="Adicionar uma Operação"
+        title="Cadastre uma Operação"
         operationSelected={selectedOperation}
         onSave={() => fetchOperations()}
       />

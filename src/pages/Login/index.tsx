@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Container, PatternLogin, LogoWrapper } from './styles';
-import logo from '../../assets/logo.svg';
+import { Container, PatternLogin, LogoWrapper,Line } from './styles';
+import goit from '../../assets/goit.png';
 import patternLogin from '../../assets/pattern-login.svg';
 
 import LoginBox from './components/LoginBox';
@@ -9,12 +9,14 @@ import LoginBox from './components/LoginBox';
 const Login: React.FC = () => {
   return (
     <Container>
+      <PatternLogin src={patternLogin} alt="pattern" />
+      <Line></Line>
       <LoginBox />
       <LogoWrapper>
-        <img src={logo} alt="GoIt" />
+        <img src={goit} alt="" />
       </LogoWrapper>
 
-      <PatternLogin src={patternLogin} alt="pattern" />
+      
     </Container>
   );
 };

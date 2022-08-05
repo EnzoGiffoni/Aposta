@@ -49,7 +49,7 @@ export const Container = styled.button<ButtonProps>`
 
 
 
-  background-color: #ff5427;
+  background-color: #836FFF;
   color: #fff;
   font-size: 13px;
   border: none;

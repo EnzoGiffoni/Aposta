@@ -16,6 +16,14 @@ export const PatternLogin = styled.img`
   position: absolute;
 `;
 
+export const Line = styled.div`
+background-color: #302476;
+width: 30rem;
+height: 2px;
+border-radius: 15px;
+margin: 0 auto;
+`;
+
 export const LogoWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,6 +31,6 @@ export const LogoWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 5rem;
   bottom: 100px;
 `;

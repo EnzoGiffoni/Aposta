@@ -25,7 +25,7 @@ const HeaderBar: React.FC = () => {
   return (
     <Container>
       <MainInfoWrapper>
-        <SystemTitle>Sistema de Manutenção e Inspeção</SystemTitle>
+        <SystemTitle>Apostinha Valendo 1 Barão</SystemTitle>
         <Divider />
         <RouteName>{routesDictionary.get(location.pathname)}</RouteName>
       </MainInfoWrapper>

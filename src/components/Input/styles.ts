@@ -42,7 +42,7 @@ export const Container = styled.div<ErrorProps>`
 
 export const Label = styled.span<ErrorProps>`
   text-align: left;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: bold;
   letter-spacing: 1.8px;
   color: #888888;

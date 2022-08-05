@@ -15,6 +15,7 @@ import {
   LineSeparator,
   ButtonsWrapper,
   ForgetPasswordText,
+  ButtonsWrapper2
 } from './styles';
 
 import validations from './validations';
@@ -102,10 +103,11 @@ const LoginBox: React.FC = () => {
 
   return (
     <Container>
-      <MainTitle>Sistema de Manutenção e Inspenção</MainTitle>
+      <MainTitle> Desafio Aplicativo: Easy Support </MainTitle>
       <SecondaryText>Acesse sua conta</SecondaryText>
-
-      <Input
+      
+    <div className='Inputs'>
+        <Input
         hasError={
           touched.email && errors.email ? Boolean(errors.email) : undefined
         }
@@ -113,7 +115,7 @@ const LoginBox: React.FC = () => {
         errorMessage={errors.email ? errors.email : ''}
         labelText="Login"
         onBlur={handleBlur}
-        placeholder="Login de usuário"
+        placeholder="insira seu email:"
         onChange={e => handleEmailChangeText(e.target.value)}
         name="email"
       />
@@ -128,16 +130,23 @@ const LoginBox: React.FC = () => {
         onChange={e => handlePasswordChangeText(e.target.value)}
         onBlur={handleBlur}
         labelText="Senha"
-        placeholder="*****"
+        placeholder="*********"
         type="password"
         name="password"
       />
+    </div>
+
+    
+
       <ButtonsWrapper>
         <Checkbox
-          labelText="Lembrar usuário"
+          labelText="Lembrar usuário?"
           checked={checkboxValue}
           onChange={e => setCheckboxValue(e.target.checked)}
         />
+      </ButtonsWrapper>   
+      
+      <ButtonsWrapper2>
         <Button
           disabled={!dirty || !isValid}
           loading={isLoading}
@@ -146,12 +155,10 @@ const LoginBox: React.FC = () => {
         >
           Login
         </Button>
-      </ButtonsWrapper>
+      </ButtonsWrapper2>
+      
 
       <LineSeparator />
-      <ForgetPasswordText onClick={() => history.push('recuperar-senha')}>
-        Esqueci minha senha
-      </ForgetPasswordText>
     </Container>
   );
 };

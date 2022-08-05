@@ -8,8 +8,7 @@ interface InputsWrapperProps {
 export const Container = styled(Form)`
   width: 610px;
   background-color: #fff;
-  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 13px;
+  box-shadow: 0px 25px 25px 25px rgba(0, 0, 0, 0.1);
 
   padding: 28px 39px;
 
@@ -97,4 +96,5 @@ export const UploadInput = styled.input`
 
 export const ButtonWrapper = styled.div`
   margin-top: 25px;
+  background-color: #836FFF;
 `;

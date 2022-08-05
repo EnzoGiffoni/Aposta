@@ -19,7 +19,7 @@ export const HTMLCheckbox = styled.input`
   cursor: pointer;
 
   &:checked {
-    background-color: #ff5427;
+    background-color: #836FFF;
   }
 `;
 
